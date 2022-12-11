@@ -27,7 +27,7 @@ class Player extends PositionComponent with HasGameRef<MyGame>, Draggable {
             game.size.x,
             game.size.y,
           ),
-          Paint()..color = const Color(0xff000000),
+          Paint()..color = const Color(0xff333333),
         );
       for (final raycast in raycastResult) {
         canvas.drawLine(

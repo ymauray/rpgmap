@@ -14,6 +14,7 @@ dependencies:
   xml: ^6.1.0
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.11.0
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
@@ -24,3 +25,7 @@ flutter:
   assets:
     - assets/tiles/
     - assets/images/
+
+flutter_icons:
+  ios: true
+  image_path: "assets/launcher/launcher_icon.png"
