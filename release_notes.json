@@ -1,0 +1,16 @@
+[{
+    "language": "en-US",
+    "text": "-- Bugfix : something"
+},
+{
+    "language": "fr-FR",
+    "text": "-- Bugfix : quelque chose"
+},
+{
+    "language": "en-US",
+    "text": "-- Bugfix : something else"
+},
+{
+    "language": "fr-FR",
+    "text": "-- Bugfix : quelque chose d'autre"
+}]

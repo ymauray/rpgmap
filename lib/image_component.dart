@@ -24,8 +24,20 @@ class ImageComponent extends PositionComponent
       image,
       size.toRect(),
       size.toRect(),
-      Paint()..color = const Color(0xFFFF0000),
+      Paint()..color = const Color(0xFFFFFFFF),
     );
+
+    //for (final wall in game.walls) {
+    //  final start = wall.start.toOffset();
+    //  final end = wall.end.toOffset();
+    //  canvas.drawLine(
+    //    start,
+    //    end,
+    //    Paint()
+    //      ..color = const Color(0xFFff0000)
+    //      ..strokeWidth = 5,
+    //  );
+    //}
   }
 
   @override
