@@ -26,9 +26,10 @@ class Player extends PositionComponent with HasGameRef<MyGame>, Draggable {
   @override
   Future<void>? onLoad() {
     c = (size / 2).toOffset();
-    rayShader =
-        const RadialGradient(colors: [Color(0xFFFFFFFF), Color(0x00FFFFFF)])
-            .createShader(
+    rayShader = const RadialGradient(
+      colors: [Color(0xFFFFFFFF), Color(0xFFFFFFFF), Color(0x00FFFFFF)],
+      stops: [0.0, 0.5, 1.0],
+    ).createShader(
       Rect.fromCircle(
         center: c,
         radius: kViewMax,
@@ -46,7 +47,7 @@ class Player extends PositionComponent with HasGameRef<MyGame>, Draggable {
     final rays = <Offset>[];
     if (game.activePlayer == this) {
       final ray = Vector2(-1, 1).normalized();
-      const nrays = 3000;
+      const nrays = 800;
       const step = 6.283185307 / nrays;
 
       for (var n = 0; n < nrays; n++) {
