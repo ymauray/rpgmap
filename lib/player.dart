@@ -12,7 +12,6 @@ class Player extends PositionComponent with HasGameRef<MyGame>, Draggable {
           ..style = PaintingStyle.fill,
         super(size: Vector2.all(64), anchor: Anchor.center);
 
-  bool hasTarget = false;
   final overlayPainter = Paint()..color = const Color(0xff666666);
   final rayPainter = Paint()
     ..color = const Color(0xFFFFFFFF)

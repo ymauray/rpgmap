@@ -24,6 +24,7 @@ class MyGame extends FlameGame
   late Player green;
   late Player blue;
   late Player yellow;
+  late Player activePlayer;
   late PlayerButton redButton;
   late PlayerButton greenButton;
   late PlayerButton blueButton;
@@ -54,23 +55,22 @@ class MyGame extends FlameGame
 
     await addAll([
       imageComponent,
-      red = Player(const Color(0xffff0000))
+      activePlayer = red = Player(const Color(0xffff0000))
         ..position = Vector2(
-          tileSize / 2 + tileSize * 37,
-          tileSize / 2 + 20 * tileSize,
+          tileSize / 2 + tileSize * 46,
+          tileSize / 2 + 26 * tileSize,
         ),
-      //green = Player()
-      //  ..position =
-      //      Vector2(tileSize / 2 + tileSize * 5, tileSize / 2 + tileSize * 1)
-      //  ..color = const Color(0xff00ff00),
-      //blue = Player()
-      //  ..position =
-      //      Vector2(tileSize / 2 + tileSize * 5, tileSize / 2 + tileSize * 3)
-      //  ..color = const Color(0xff0000ff),
-      //yellow = Player()
-      //  ..position =
-      //      Vector2(tileSize / 2 + tileSize * 1, tileSize / 2 + tileSize * 3)
-      //  ..color = const Color(0xffffff00),
+      green = Player(const Color(0xff00ff00))
+        ..position = Vector2(
+          tileSize / 2 + tileSize * 39.5,
+          tileSize / 2 + tileSize * 21,
+        ),
+      blue = Player(const Color(0xff0000ff))
+        ..position =
+            Vector2(tileSize / 2 + tileSize * 33, tileSize / 2 + tileSize * 26),
+      yellow = Player(const Color(0xffffff00))
+        ..position =
+            Vector2(tileSize / 2 + tileSize * 35, tileSize / 2 + tileSize * 16),
       redButton = PlayerButton()
         ..position = Vector2(
           tileSize * (viewportWidth - 4),
@@ -79,6 +79,7 @@ class MyGame extends FlameGame
         ..color = const Color(0xffff0000)
         ..onTap = () {
           cameraTarget = red.position - camera.gameSize / 2;
+          activePlayer = red;
         },
       greenButton = PlayerButton()
         ..position = Vector2(
@@ -88,6 +89,7 @@ class MyGame extends FlameGame
         ..color = const Color(0xff00ff00)
         ..onTap = () {
           cameraTarget = green.position - camera.gameSize / 2;
+          activePlayer = green;
         },
       blueButton = PlayerButton()
         ..position = Vector2(
@@ -97,6 +99,7 @@ class MyGame extends FlameGame
         ..color = const Color(0xff0000ff)
         ..onTap = () {
           cameraTarget = blue.position - camera.gameSize / 2;
+          activePlayer = blue;
         },
       yellowButton = PlayerButton()
         ..position = Vector2(
@@ -106,6 +109,7 @@ class MyGame extends FlameGame
         ..color = const Color(0xffffff00)
         ..onTap = () {
           cameraTarget = yellow.position - camera.gameSize / 2;
+          activePlayer = yellow;
         },
       FpsTextComponent()
         ..anchor = Anchor.bottomLeft
