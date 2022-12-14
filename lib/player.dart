@@ -6,10 +6,22 @@ import 'package:rpgmap/game.dart';
 import 'package:rpgmap/wall.dart';
 
 class Player extends PositionComponent with HasGameRef<MyGame>, Draggable {
-  Player() : super(size: Vector2.all(64), anchor: Anchor.center);
+  Player(Color color)
+      : playerPainter = Paint()
+          ..color = color
+          ..style = PaintingStyle.fill,
+        super(size: Vector2.all(64), anchor: Anchor.center);
 
-  Color color = const Color(0x00FFFFFF);
   bool hasTarget = false;
+  final overlayPainter = Paint()..color = const Color(0xff666666);
+  final rayPainter = Paint()
+    ..color = const Color(0xFFFFFFFF)
+    ..strokeWidth = 2;
+  final blackFilledPainter = Paint()
+    ..color = const Color(0xFF000000)
+    ..style = PaintingStyle.fill;
+
+  Paint playerPainter;
 
   @override
   void render(Canvas canvas) {
@@ -61,10 +73,8 @@ class Player extends PositionComponent with HasGameRef<MyGame>, Draggable {
           final x = x1 + u * (x2 - x1);
           final y = y1 + u * (y2 - y1);
 
-          final v = Offset(x, y) - position.toOffset() + (size / 2).toOffset();
-
-          if (v.distance < dmin) {
-            dmin = v.distance;
+          if (t < dmin) {
+            dmin = t;
             xmin = x;
             ymin = y;
           }
@@ -89,15 +99,13 @@ class Player extends PositionComponent with HasGameRef<MyGame>, Draggable {
             game.size.x,
             game.size.y,
           ),
-          Paint()..color = const Color(0xff666666),
+          overlayPainter,
         );
       for (final ray in rays) {
         canvas.drawLine(
           c,
           c + ray,
-          Paint()
-            ..color = const Color(0xFFFFFFFF)
-            ..strokeWidth = 2,
+          rayPainter,
         );
       }
       canvas.restore();
@@ -106,16 +114,12 @@ class Player extends PositionComponent with HasGameRef<MyGame>, Draggable {
       ..drawCircle(
         c,
         20,
-        Paint()
-          ..color = const Color(0xFF000000)
-          ..style = PaintingStyle.fill,
+        blackFilledPainter,
       )
       ..drawCircle(
-        (size / 2).toOffset(),
+        c,
         16,
-        Paint()
-          ..color = color
-          ..style = PaintingStyle.fill,
+        playerPainter,
       );
   }
 
@@ -189,7 +193,7 @@ class PlayerButton extends PositionComponent with HasGameRef<MyGame>, Tappable {
           ..style = PaintingStyle.fill,
       )
       ..drawCircle(
-        (size / 2).toOffset(),
+        c,
         16,
         Paint()
           ..color = color
