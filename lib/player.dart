@@ -153,22 +153,6 @@ class PlayerButton extends PositionComponent with HasGameRef<MyGame>, Tappable {
   VoidCallback? onTap;
 
   @override
-  bool onDragStart(DragStartInfo info) {
-    return false;
-  }
-
-  @override
-  bool onDragUpdate(DragUpdateInfo info) {
-    position -= info.delta.game;
-    return false;
-  }
-
-  @override
-  bool onDragEnd(DragEndInfo info) {
-    return false;
-  }
-
-  @override
   bool onTapDown(TapDownInfo info) {
     return false;
   }
