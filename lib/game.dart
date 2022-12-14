@@ -4,6 +4,7 @@ import 'package:flame/events.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+import 'package:rpgmap/hud/zoom_button.dart';
 import 'package:rpgmap/image_component.dart';
 import 'package:rpgmap/player.dart';
 import 'package:rpgmap/utils.dart';
@@ -52,6 +53,9 @@ class MyGame extends FlameGame
     );
 
     walls = await loadInkScapeSVG('assets/images/dessin.svg');
+
+    final zoomInIcon = await Sprite.load('assets/images/hud/zoom-in-512.png');
+    final zoomOutIcon = await Sprite.load('assets/images/hud/zoom-out-512.png');
 
     await addAll([
       imageComponent,
@@ -121,6 +125,16 @@ class MyGame extends FlameGame
             color: Color(0xFF00FF00),
           ),
         ),
+      ZoomButton(
+        Vector2.zero(),
+        Vector2.all(512),
+        zoomInIcon,
+      )..positionType = PositionType.viewport,
+      ZoomButton(
+        Vector2.all(512),
+        Vector2.all(512),
+        zoomOutIcon,
+      )..positionType = PositionType.viewport,
     ]);
 
     rayMax = camera.viewport.effectiveSize.length;
