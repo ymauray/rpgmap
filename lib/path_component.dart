@@ -4,7 +4,7 @@ import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:rpgmap/game.dart';
 
-class PathComponent extends PositionComponent with HasGameRef<MyGame> {
+class PathComponent extends PositionComponent with HasGameRef<RpgMapGame> {
   PathComponent(this.pathData) : super();
 
   final String pathData;
