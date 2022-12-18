@@ -17,9 +17,31 @@ class ShaderComponent extends PositionComponent with HasGameRef<RpgMapGame> {
 
   @override
   void render(Canvas canvas) {
-    final resolution = Vector2(gameRef.size.x, gameRef.size.y);
-    final uniformFloats = <double>[resolution.x, resolution.y, time];
+    final xRatio = game.map.backgroundSize.x / game.map.viewBox.x;
+    final yRatio = game.map.backgroundSize.y / game.map.viewBox.y;
 
+    final resolution = Vector2(
+      gameRef.map.backgroundSize.x,
+      gameRef.map.backgroundSize.y,
+    );
+
+    final uniformFloats = <double>[
+      resolution.x,
+      resolution.y,
+      time,
+      game.activePlayer.position.x,
+      game.activePlayer.position.y
+    ];
+
+    final firstWall = game.map.walls.first;
+    uniformFloats.addAll([
+      firstWall.start.x * xRatio,
+      firstWall.start.y * yRatio,
+      firstWall.end.x * xRatio,
+      firstWall.end.y * yRatio,
+    ]);
+
+    //debugPrint(uniformFloats.toString());
     final shader = gameRef.program.shader(
       floatUniforms: Float32List.fromList(uniformFloats),
     );

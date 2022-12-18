@@ -1,7 +1,6 @@
 import 'package:flame/components.dart';
 import 'package:flame/extensions.dart';
 import 'package:flame/input.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/rendering.dart';
 import 'package:rpg_map/rpg_map.dart';
 import 'package:rpgmap/game.dart';
@@ -86,107 +85,107 @@ class Token extends PositionComponent with HasGameRef<RpgMapGame>, Draggable {
     //  );
     //}
 
-    final rays = <Offset>[];
-    if (game.activePlayer == this) {
-      final ray = Vector2(1, -1).normalized();
+    //final rays = <Offset>[];
+    //if (game.activePlayer == this) {
+    //  final ray = Vector2(1, -1).normalized();
 
-      for (var n = 0; n < nrays; n++) {
-        var xmin = double.infinity;
-        var ymin = double.infinity;
-        var dmin = double.infinity;
+    //  for (var n = 0; n < nrays; n++) {
+    //    var xmin = double.infinity;
+    //    var ymin = double.infinity;
+    //    var dmin = double.infinity;
 
-        final dx = ray.x;
-        final dy = ray.y;
-        game.wallCount = 0;
+    //    final dx = ray.x;
+    //    final dy = ray.y;
+    //    game.wallCount = 0;
 
-        final intersections = <Intersection>[];
+    //    final intersections = <Intersection>[];
 
-        for (final wall in [
-          ...game.map.walls,
-          ...game.map.terrainWalls,
-          ...game.doors.where((d) => d.closed),
-        ]) {
-          if (kDebugMode) {
-            game.wallCount += 1;
-          }
+    //    for (final wall in [
+    //      ...game.map.walls,
+    //      ...game.map.terrainWalls,
+    //      ...game.doors.where((d) => d.closed),
+    //    ]) {
+    //      if (kDebugMode) {
+    //        game.wallCount += 1;
+    //      }
 
-          final x1 = wall.start.x * xRatio;
-          final y1 = wall.start.y * yRatio;
-          final x2 = wall.end.x * xRatio;
-          final y2 = wall.end.y * yRatio;
+    //      final x1 = wall.start.x * xRatio;
+    //      final y1 = wall.start.y * yRatio;
+    //      final x2 = wall.end.x * xRatio;
+    //      final y2 = wall.end.y * yRatio;
 
-          final t = ((xp - x1) * (y2 - y1) - (yp - y1) * (x2 - x1)) /
-              (dy * (x2 - x1) - dx * (y2 - y1));
-          final u = ((xp - x1) * dy - (yp - y1) * dx) /
-              ((x2 - x1) * dy - (y2 - y1) * dx);
+    //      final t = ((xp - x1) * (y2 - y1) - (yp - y1) * (x2 - x1)) /
+    //          (dy * (x2 - x1) - dx * (y2 - y1));
+    //      final u = ((xp - x1) * dy - (yp - y1) * dx) /
+    //          ((x2 - x1) * dy - (y2 - y1) * dx);
 
-          if (u >= 0 && u <= 1 && t >= 0) {
-            final x = x1 + u * (x2 - x1);
-            final y = y1 + u * (y2 - y1);
+    //      if (u >= 0 && u <= 1 && t >= 0) {
+    //        final x = x1 + u * (x2 - x1);
+    //        final y = y1 + u * (y2 - y1);
 
-            if (t <= kViewMax) {
-              intersections.add(
-                Intersection(Vector2(x, y), t, wall.type),
-              );
-            }
-            if (t < dmin) {
-              dmin = t;
-              xmin = x;
-              ymin = y;
-            }
-          }
-        }
+    //        if (t <= kViewMax) {
+    //          intersections.add(
+    //            Intersection(Vector2(x, y), t, wall.type),
+    //          );
+    //        }
+    //        if (t < dmin) {
+    //          dmin = t;
+    //          xmin = x;
+    //          ymin = y;
+    //        }
+    //      }
+    //    }
 
-        intersections.sort((a, b) => a.distance.compareTo(b.distance));
+    //    intersections.sort((a, b) => a.distance.compareTo(b.distance));
 
-        if (intersections.isNotEmpty) {
-          if (intersections.first.type == RpgWallType.terrain) {
-            intersections.removeAt(0);
-          }
-          if (intersections.isNotEmpty) {
-            final intersection = intersections.first;
-            final v = Offset(intersection.point.x, intersection.point.y) -
-                position.toOffset();
-            rays.add(v);
-          } else {
-            rays.add(
-              (Vector2(xp, yp) + ray * kViewMax).toOffset() -
-                  position.toOffset(),
-            );
-          }
-          //final v = Offset(xmin, ymin) - position.toOffset();
-          //rays.add(v);
-        } else {
-          rays.add(
-            (Vector2(xp, yp) + ray * kViewMax).toOffset() - position.toOffset(),
-          );
-        }
+    //    if (intersections.isNotEmpty) {
+    //      if (intersections.first.type == RpgWallType.terrain) {
+    //        intersections.removeAt(0);
+    //      }
+    //      if (intersections.isNotEmpty) {
+    //        final intersection = intersections.first;
+    //        final v = Offset(intersection.point.x, intersection.point.y) -
+    //            position.toOffset();
+    //        rays.add(v);
+    //      } else {
+    //        rays.add(
+    //          (Vector2(xp, yp) + ray * kViewMax).toOffset() -
+    //              position.toOffset(),
+    //        );
+    //      }
+    //      //final v = Offset(xmin, ymin) - position.toOffset();
+    //      //rays.add(v);
+    //    } else {
+    //      rays.add(
+    //        (Vector2(xp, yp) + ray * kViewMax).toOffset() - position.toOffset(),
+    //      );
+    //    }
 
-        ray.rotate(step);
-      }
-    }
+    //    ray.rotate(step);
+    //  }
+    //}
 
-    if (rays.isNotEmpty) {
-      canvas
-        ..saveLayer(null, Paint()..blendMode = BlendMode.multiply)
-        ..drawRect(
-          Rect.fromLTWH(
-            game.cameraTarget.x - position.x + size.x / 2,
-            game.cameraTarget.y - position.y + size.y / 2,
-            game.size.x,
-            game.size.y,
-          ),
-          overlayPainter,
-        );
-      for (final ray in rays) {
-        canvas.drawLine(
-          c,
-          c + ray,
-          rayPainter,
-        );
-      }
-      canvas.restore();
-    }
+    //if (rays.isNotEmpty) {
+    //  canvas
+    //    ..saveLayer(null, Paint()..blendMode = BlendMode.multiply)
+    //    ..drawRect(
+    //      Rect.fromLTWH(
+    //        game.cameraTarget.x - position.x + size.x / 2,
+    //        game.cameraTarget.y - position.y + size.y / 2,
+    //        game.size.x,
+    //        game.size.y,
+    //      ),
+    //      overlayPainter,
+    //    );
+    //  for (final ray in rays) {
+    //    canvas.drawLine(
+    //      c,
+    //      c + ray,
+    //      rayPainter,
+    //    );
+    //  }
+    //  canvas.restore();
+    //}
 
     canvas
       ..drawCircle(
