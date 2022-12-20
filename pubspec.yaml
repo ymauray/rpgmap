@@ -11,6 +11,8 @@ dependencies:
   flame_tiled: ^1.9.0
   flutter:
     sdk: flutter
+  rpg_map:
+    path: package/rpg_map
   xml: ^6.1.0
 
 dev_dependencies:
@@ -25,6 +27,8 @@ flutter:
   assets:
     - assets/tiles/
     - assets/images/
+    - assets/images/hud/
+    - assets/shaders/
 
 flutter_icons:
   ios: true

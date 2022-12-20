@@ -6,7 +6,7 @@ import 'package:flame/input.dart';
 import 'package:rpgmap/game.dart';
 
 class ImageComponent extends PositionComponent
-    with HasGameRef<MyGame>, Draggable {
+    with HasGameRef<RpgMapGame>, Draggable {
   ImageComponent(this.image, {Vector2? size, Anchor? anchor})
       : super(size: size ?? Vector2.all(64), anchor: anchor ?? Anchor.center);
 
@@ -26,18 +26,6 @@ class ImageComponent extends PositionComponent
       size.toRect(),
       Paint()..color = const Color(0xFFFFFFFF),
     );
-
-    //for (final wall in game.walls) {
-    //  final start = wall.start.toOffset();
-    //  final end = wall.end.toOffset();
-    //  canvas.drawLine(
-    //    start,
-    //    end,
-    //    Paint()
-    //      ..color = const Color(0xFFff0000)
-    //      ..strokeWidth = 5,
-    //  );
-    //}
   }
 
   @override
