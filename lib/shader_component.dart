@@ -1,8 +1,8 @@
-import 'dart:ui';
-
 import 'package:flame/components.dart';
-import 'package:flutter/foundation.dart';
+import 'package:flutter/rendering.dart';
 import 'package:rpgmap/game.dart';
+
+int lastnwalls = 0;
 
 class ShaderComponent extends PositionComponent with HasGameRef<RpgMapGame> {
   ShaderComponent() : super(position: Vector2.zero());
@@ -17,7 +17,14 @@ class ShaderComponent extends PositionComponent with HasGameRef<RpgMapGame> {
 
   @override
   void render(Canvas canvas) {
-    const nwalls = 7;
+    var nwalls = game.map.walls.length;
+
+    if (nwalls != lastnwalls) {
+      debugPrint('nwalls: $nwalls');
+      lastnwalls = nwalls;
+    }
+
+    nwalls = nwalls.clamp(0, 150);
 
     final xRatio = game.map.backgroundSize.x / game.map.viewBox.x;
     final yRatio = game.map.backgroundSize.y / game.map.viewBox.y;
@@ -45,14 +52,11 @@ class ShaderComponent extends PositionComponent with HasGameRef<RpgMapGame> {
         wall.end.y * yRatio,
       ]);
     }
-    for (var i = nwalls; i < 10; i++) {
-      uniformFloats.addAll([0, 0, 0, 0]);
-    }
 
-    //debugPrint(uniformFloats.toString());
-    final shader = gameRef.program.shader(
-      floatUniforms: Float32List.fromList(uniformFloats),
-    );
+    final shader = gameRef.program.fragmentShader();
+    for (var i = 0; i < uniformFloats.length; i++) {
+      shader.setFloat(i, uniformFloats[i]);
+    }
 
     final paint = Paint()..shader = shader;
 

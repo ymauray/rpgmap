@@ -7,12 +7,8 @@ import 'package:rpgmap/game.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final program = await FragmentProgram.compile(
-    spirv: (await rootBundle.load(
-      'assets/shaders/dynamic_lighting.frag.spv',
-    ))
-        .buffer,
-    debugPrint: true,
+  final program = await FragmentProgram.fromAsset(
+    'assets/shaders/dynamic_lighting.frag.glsl',
   );
   await SystemChrome.setPreferredOrientations(
     [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight],
