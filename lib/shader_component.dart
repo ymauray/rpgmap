@@ -17,6 +17,8 @@ class ShaderComponent extends PositionComponent with HasGameRef<RpgMapGame> {
 
   @override
   void render(Canvas canvas) {
+    const nwalls = 7;
+
     final xRatio = game.map.backgroundSize.x / game.map.viewBox.x;
     final yRatio = game.map.backgroundSize.y / game.map.viewBox.y;
 
@@ -30,16 +32,22 @@ class ShaderComponent extends PositionComponent with HasGameRef<RpgMapGame> {
       resolution.y,
       time,
       game.activePlayer.position.x,
-      game.activePlayer.position.y
+      game.activePlayer.position.y,
+      nwalls.toDouble(),
     ];
 
-    final firstWall = game.map.walls.first;
-    uniformFloats.addAll([
-      firstWall.start.x * xRatio,
-      firstWall.start.y * yRatio,
-      firstWall.end.x * xRatio,
-      firstWall.end.y * yRatio,
-    ]);
+    for (var i = 0; i < nwalls; i++) {
+      final wall = game.map.walls[i];
+      uniformFloats.addAll([
+        wall.start.x * xRatio,
+        wall.start.y * yRatio,
+        wall.end.x * xRatio,
+        wall.end.y * yRatio,
+      ]);
+    }
+    for (var i = nwalls; i < 10; i++) {
+      uniformFloats.addAll([0, 0, 0, 0]);
+    }
 
     //debugPrint(uniformFloats.toString());
     final shader = gameRef.program.shader(

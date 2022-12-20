@@ -29,14 +29,14 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="2.6390158"
-     inkscape:cx="1329.6624"
-     inkscape:cy="1543.9468"
+     inkscape:cx="1403.5536"
+     inkscape:cy="1361.6819"
      inkscape:window-width="2560"
      inkscape:window-height="1350"
      inkscape:window-x="1920"
      inkscape:window-y="28"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer2"
      units="px"
      inkscape:showpageshadow="true"
      showguides="true"
@@ -154,6 +154,18 @@
        position="257.82902,252.99594"
        orientation="0,-1"
        id="guide10980" />
+    <sodipodi:guide
+       position="252.23385,346.56868"
+       orientation="0,-1"
+       id="guide1269" />
+    <sodipodi:guide
+       position="220.04962,344.18738"
+       orientation="1,0"
+       id="guide3848" />
+    <sodipodi:guide
+       position="258.19449,285.1841"
+       orientation="1,0"
+       id="guide4636" />
   </sodipodi:namedview>
   <defs
      id="defs2" />
@@ -176,9 +188,29 @@
      id="layer2"
      inkscape:label="Walls">
     <path
-       style="fill:none;stroke:#edff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 252.23384,236.39899 v 42.43116"
-       id="path11015" />
+       style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 252.23384,225.17602 v -28.6307"
+       id="path1306" />
+    <path
+       style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 220.04962,196.54532 h 32.18422"
+       id="path3850" />
+    <path
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 252.23384,278.83015 V 236.39899"
+       id="path4568" />
+    <path
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 252.23384,278.83015 h 5.96065 v 0"
+       id="path4831" />
+    <path
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 258.19449,236.39899 v 42.43116"
+       id="path4932" />
+    <path
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 252.23384,236.39899 h 5.96065 v 0"
+       id="path5165" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -189,7 +221,7 @@
      id="layer4"
      inkscape:label="Terrain Walls">
     <path
-       style="fill:#ffff00;fill-opacity:0.379955;stroke:#000000;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:#ffff00;fill-opacity:0.379955;stroke:#000000;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 204.27969,253.25434 -0.83333,-0.20332 -0.92609,-0.4935 -0.49793,-0.34013 -1.14197,0.93558 -0.97199,0.69461 -0.72213,0.28772 -0.3518,-0.12705 -0.74325,-1.02628 -0.80873,-2.20759 -0.0385,-1.21058 0.25235,-1.48461 0.34423,-1.75281 0.84477,-0.99142 0.43945,-0.11331 0.91951,0.47616 1.80057,1.30196 0.61637,-0.50761 0.80445,-0.3131 0.91455,-0.18795 V 234.3281 h 11.08504 l 0.28342,-0.29802 0.28718,-0.40024 -1.47429,-2.23115 -0.19603,-0.7165 0.30529,-0.59362 0.94772,-0.52166 1.98969,-0.52588 2.10458,-0.13828 1.91845,0.47442 1.37222,0.72707 0.29514,0.59581 -0.38173,0.88165 -1.53356,2.10867 0.44811,0.41089 0.20261,0.19634 h 10.63903 v 11.1385 l 1.23934,-0.53813 1.71554,0.0674 1.41542,0.63987 0.89553,1.08384 0.47692,1.33591 -0.0221,0.95248 -0.15189,0.64105 2.30037,1.16811 0.53737,0.43595 0.0683,0.52449 -0.51724,1.10209 -1.02998,1.20748 -2.60775,1.44902 -1.84893,0.50972 -1.15431,-0.1112 -0.89588,-0.40309 -0.29298,-0.82521 0.28925,-1.35457 0.31374,-1.40021 -0.32867,-0.16496 -0.40969,-0.20311 v 11.10224 h -9.68599 l -0.21496,1.09393 -0.65272,1.2566 -0.2372,0.30388 1.38108,1.7281 0.49104,1.11591 -0.2422,0.45114 -1.17653,0.87081 -2.08678,0.53217 -2.03895,-0.0834 -1.85705,-0.35087 -1.0782,-0.62929 -0.66133,-0.57924 -0.0637,-0.52013 1.9029,-2.68251 -0.63718,-0.89808 -0.22619,-0.91748 0.0115,-0.63025 H 204.184 Z"
        id="path12010" />
   </g>
