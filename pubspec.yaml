@@ -28,7 +28,8 @@ flutter:
     - assets/tiles/
     - assets/images/
     - assets/images/hud/
-    - assets/shaders/
+  shaders:
+    - assets/shaders/dynamic_lighting.frag.glsl
 
 flutter_icons:
   ios: true
