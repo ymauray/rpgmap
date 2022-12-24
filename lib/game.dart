@@ -36,7 +36,7 @@ class RpgMapGame extends FlameGame
     await super.onLoad();
 
     camera.viewport = FixedResolutionViewport(
-      Vector2(1920, 1080),
+      Vector2(1080 * 1.5, 810 * 1.5),
     );
 
     map = RpgMap.load(await rootBundle.loadString('assets/images/inn.svg'));
