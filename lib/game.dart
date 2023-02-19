@@ -5,11 +5,12 @@ import 'package:flame/components.dart';
 import 'package:flame/events.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 import 'package:rpg_map/rpg_map.dart';
 import 'package:rpgmap/hud/zoom_button.dart';
 import 'package:rpgmap/image_component.dart';
+import 'package:rpgmap/light_source.dart';
 import 'package:rpgmap/shader_component.dart';
 import 'package:rpgmap/token.dart';
 
@@ -19,9 +20,10 @@ const viewportHeight = 12.0 * kTileSize;
 
 class RpgMapGame extends FlameGame
     with HasTappables, HasDraggables, KeyboardEvents, HasCollisionDetection {
-  RpgMapGame(this.program);
+  RpgMapGame(this.dynamicLightingProgram, this.lightSourceProgram);
 
-  final FragmentProgram program;
+  final FragmentProgram dynamicLightingProgram;
+  final FragmentProgram lightSourceProgram;
 
   late Token red;
   late Token activePlayer;
@@ -50,7 +52,14 @@ class RpgMapGame extends FlameGame
         size: map.backgroundSize,
         anchor: Anchor.topLeft,
       ),
-      ShaderComponent(),
+      ShaderComponent()
+        ..size = map.backgroundSize
+        ..lightSources = [
+          LightSource()
+            ..position = Vector2(548, 1703)
+            ..color = Colors.orange.toVector4(),
+        ],
+      //LightSource()..lightPos = Vector2(548, 1703),
       activePlayer = red = Token(const Color(0xffff0000))
         ..position = Vector2(
           map.backgroundSize.x / 2,

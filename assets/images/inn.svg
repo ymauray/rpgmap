@@ -28,9 +28,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="0.32987698"
-     inkscape:cx="739.66969"
-     inkscape:cy="1674.8668"
+     inkscape:zoom="2.6390158"
+     inkscape:cx="1435.7625"
+     inkscape:cy="222.24194"
      inkscape:window-width="2560"
      inkscape:window-height="1350"
      inkscape:window-x="1920"
@@ -371,375 +371,468 @@
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 252.23384,225.17602 v -28.6307"
-       id="path1306" />
+       id="path1306"
+       inkscape:label="wall001" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 220.04962,196.54532 h 32.18422"
-       id="path3850" />
+       id="path3850"
+       inkscape:label="wall002" />
     <path
        style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 252.23384,278.83015 V 236.39899"
-       id="path4568" />
+       id="path4568"
+       inkscape:label="wall003" />
     <path
        style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 252.23384,278.83015 h 5.96065 v 0"
-       id="path4831" />
+       d="m 252.23384,278.83015 h 5.96065"
+       id="path4831"
+       inkscape:label="wall004" />
     <path
        style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 258.19449,236.39899 v 42.43116"
-       id="path4932" />
+       id="path4932"
+       inkscape:label="wall005" />
     <path
        style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 252.23384,236.39899 h 5.96065 v 0"
-       id="path5165" />
+       d="m 252.23384,236.39899 h 5.96065"
+       id="path5165"
+       inkscape:label="wall006" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 258.19449,225.17602 h -5.96065"
-       id="path1487" />
+       id="path1487"
+       inkscape:label="wall007" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 258.19449,196.54532 v 28.6307 0"
-       id="path1522" />
+       d="m 258.19449,196.54532 v 28.6307"
+       id="path1522"
+       inkscape:label="wall008" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 220.11451,190.55369 v 5.99163"
-       id="path1714" />
+       id="path1714"
+       inkscape:label="wall009" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 306.08328,190.55369 H 220.11451"
-       id="path1749" />
+       id="path1749"
+       inkscape:label="wall010" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 306.08328,149.2842 v 41.26949"
-       id="path1784" />
+       id="path1784"
+       inkscape:label="wall011" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 312.03907,149.2842 h -5.95579"
-       id="path1819" />
+       id="path1819"
+       inkscape:label="wall012" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 312.03907,196.54532 v -47.26112 0"
-       id="path1854" />
+       d="m 312.03907,196.54532 v -47.26112"
+       id="path1854"
+       inkscape:label="wall013" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 312.03907,196.54532 H 258.19449"
-       id="path1889" />
+       id="path1889"
+       inkscape:label="wall014" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 252.23384,290.11805 h 5.96065"
-       id="path1924" />
+       id="path1924"
+       inkscape:label="wall015" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 258.19449,339.46371 -0.36547,-49.34566"
-       id="path1963" />
+       id="path1963"
+       inkscape:label="wall016" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 258.19449,290.11805 v 49.34566"
-       id="path2068" />
+       id="path2068"
+       inkscape:label="wall017" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 252.23384,339.46371 h 5.96065"
-       id="path2103" />
+       id="path2103"
+       inkscape:label="wall018" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 252.23384,290.11805 v 49.34566"
-       id="path2138" />
+       id="path2138"
+       inkscape:label="wall019" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 252.23384,350.62689 h 5.96065"
-       id="path2320" />
+       id="path2320"
+       inkscape:label="wall020" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 258.19449,394.67816 V 350.62689"
-       id="path2357" />
+       id="path2357"
+       inkscape:label="wall021" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 237.9419,394.67816 h 20.25259"
-       id="path2509" />
+       id="path2509"
+       inkscape:label="wall022" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 237.9419,388.68462 v 5.99354"
-       id="path2546" />
+       id="path2546"
+       inkscape:label="wall023" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 237.9419,388.68462 h 14.29194"
-       id="path2581" />
+       id="path2581"
+       inkscape:label="wall024" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 252.23384,388.68462 V 350.62689"
-       id="path2616" />
+       id="path2616"
+       inkscape:label="wall025" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 226.69713,388.68462 v 5.99354"
-       id="path2651" />
+       id="path2651"
+       inkscape:label="wall026" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 184.44038,394.67816 h 42.25675"
-       id="path2710" />
+       id="path2710"
+       inkscape:label="wall027" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 184.44038,388.68462 v 5.99354"
-       id="path2745" />
+       id="path2745"
+       inkscape:label="wall028" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 184.44038,388.68462 h 42.25675"
-       id="path2780" />
+       id="path2780"
+       inkscape:label="wall029" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 173.26151,388.68462 v 5.99354"
-       id="path2815" />
+       id="path2815"
+       inkscape:label="wall030" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 173.26151,394.67816 H 154.93874"
-       id="path2850" />
+       id="path2850"
+       inkscape:label="wall031" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 154.93874,388.68462 h 18.32277"
-       id="path2885" />
+       id="path2885"
+       inkscape:label="wall032" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 154.93874,388.68462 v 5.99354"
-       id="path2920" />
+       id="path2920"
+       inkscape:label="wall033" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 120.89499,388.68462 v 5.99354"
-       id="path2955" />
+       id="path2955"
+       inkscape:label="wall034" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 77.656788,394.67816 H 120.89499"
-       id="path2990" />
+       id="path2990"
+       inkscape:label="wall035" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 77.656788,350.62689 v 44.05127"
-       id="path3025" />
+       id="path3025"
+       inkscape:label="wall036" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 83.632084,350.62689 H 77.656788"
-       id="path3060" />
+       id="path3060"
+       inkscape:label="wall037" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 83.632084,388.68462 V 350.62689"
-       id="path3095" />
+       id="path3095"
+       inkscape:label="wall038" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 83.632084,388.68462 H 120.89499"
-       id="path3130" />
+       id="path3130"
+       inkscape:label="wall039" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 77.656788,339.46371 h 5.975296"
-       id="path3165" />
+       id="path3165"
+       inkscape:label="wall040" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 83.632084,316.99933 v 22.46438"
-       id="path3200" />
+       id="path3200"
+       inkscape:label="wall041" />
     <path
        style="fill:#ffff00;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 96.927666,316.99933 H 83.632084"
-       id="path3235" />
+       id="path3235"
+       inkscape:label="wall042" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 96.927666,306.2835 v 10.71583"
-       id="path3303" />
+       id="path3303"
+       inkscape:label="wall043" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 89.389645,306.2835 h 7.538021"
-       id="path3338" />
+       id="path3338"
+       inkscape:label="wall044" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 89.389645,255.57065 V 306.2835"
-       id="path3373" />
+       id="path3373"
+       inkscape:label="wall045" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 96.927666,255.57065 H 89.389645"
-       id="path3408" />
+       id="path3408"
+       inkscape:label="wall046" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 96.927666,244.85729 v 10.71336"
-       id="path3443" />
+       id="path3443"
+       inkscape:label="wall047" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 83.632084,244.85729 H 96.927666"
-       id="path3478" />
+       id="path3478"
+       inkscape:label="wall048" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 83.632084,196.54532 v 48.31197"
-       id="path3513" />
+       id="path3513"
+       inkscape:label="wall049" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 186.01669,196.54532 H 83.632084"
-       id="path3548" />
+       id="path3548"
+       inkscape:label="wall050" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 186.01669,190.55369 v 5.99163"
-       id="path3583" />
+       id="path3583"
+       inkscape:label="wall051" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 101.71231,190.55369 h 84.30438"
-       id="path3622" />
+       id="path3622"
+       inkscape:label="wall052" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 101.71231,116.35593 v 74.19776"
-       id="path3657" />
+       id="path3657"
+       inkscape:label="wall053" />
     <path
        style="fill:#ffff00;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 95.7042,116.35593 h 6.00811 v 0"
-       id="path3692" />
+       d="m 95.7042,116.35593 h 6.00811"
+       id="path3692"
+       inkscape:label="wall054" />
     <path
        style="fill:#ffff00;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 95.7042,190.55369 V 116.35593"
-       id="path3760" />
+       id="path3760"
+       inkscape:label="wall055" />
     <path
        style="fill:#ffff00;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 38.894541,190.55369 H 95.7042"
-       id="path3828" />
+       id="path3828"
+       inkscape:label="wall056" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 38.894541,97.148161 V 190.55369"
-       id="path3896" />
+       id="path3896"
+       inkscape:label="wall057" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 212.65216,97.148161 H 38.894541"
-       id="path3931" />
+       id="path3931"
+       inkscape:label="wall058" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 212.65216,86.92005 V 97.148161"
-       id="path3966" />
+       id="path3966"
+       inkscape:label="wall059" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 264.01543,86.92005 H 212.65216"
-       id="path4003" />
+       id="path4003"
+       inkscape:label="wall060" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 264.01543,80.99545 v 5.9246"
-       id="path4038" />
+       id="path4038"
+       inkscape:label="wall061" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 212.65216,80.99545 h 51.36327"
-       id="path4073" />
+       id="path4073"
+       inkscape:label="wall062" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 212.65216,66.01488 V 80.99545"
-       id="path4108" />
+       id="path4108"
+       inkscape:label="wall063" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 206.66584,66.01488 h 5.98632"
-       id="path4143" />
+       id="path4143"
+       inkscape:label="wall064" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 206.66584,91.10671 V 66.01488"
-       id="path4178" />
+       id="path4178"
+       inkscape:label="wall065" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 33.07359,91.10671 H 206.66584"
-       id="path4213" />
+       id="path4213"
+       inkscape:label="wall066" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 33.07359,196.54532 V 91.10671"
-       id="path4248" />
+       id="path4248"
+       inkscape:label="wall067" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 77.656788,196.54532 H 33.07359"
-       id="path4283" />
+       id="path4283"
+       inkscape:label="wall068" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 77.656788,262.46009 V 196.54532"
-       id="path4318" />
+       id="path4318"
+       inkscape:label="wall069" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 68.600575,269.19622 9.056213,-6.73613"
-       id="path4390" />
+       id="path4390"
+       inkscape:label="wall070" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 68.600575,292.74332 v -23.5471"
-       id="path4425" />
+       id="path4425"
+       inkscape:label="wall071" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 77.656788,299.4939 -9.056213,-6.75058"
-       id="path4460" />
+       id="path4460"
+       inkscape:label="wall072" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 77.656788,339.46371 V 299.4939"
-       id="path4495" />
+       id="path4495"
+       inkscape:label="wall073" />
     <path
-       style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 206.66584,49.257601 h 5.98632"
-       id="path4687" />
+       id="path4687"
+       inkscape:label="wall074" />
     <path
-       style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 212.65216,22.872059 V 49.257601"
-       id="path4722" />
+       id="path4722"
+       inkscape:label="wall075" />
     <path
-       style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 227.65654,22.872059 H 212.65216"
-       id="path4757" />
+       id="path4757"
+       inkscape:label="wall076" />
     <path
-       style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 227.65654,16.947459 v 5.9246"
-       id="path4792" />
+       id="path4792"
+       inkscape:label="wall077" />
     <path
-       style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 206.66584,16.947459 h 20.9907"
-       id="path4827" />
+       id="path4827"
+       inkscape:label="wall078" />
     <path
-       style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 206.66584,16.947459 V 49.257601"
-       id="path4862" />
+       id="path4862"
+       inkscape:label="wall079" />
     <path
-       style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 248.47085,16.947459 v 5.9246 0"
-       id="path4897" />
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 248.47085,16.947459 v 5.9246"
+       id="path4897"
+       inkscape:label="wall080" />
     <path
-       style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 269.19697,22.872059 H 248.47085"
-       id="path4933" />
+       id="path4933"
+       inkscape:label="wall081" />
     <path
-       style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 269.19697,16.947459 v 5.9246"
-       id="path4968" />
+       id="path4968"
+       inkscape:label="wall082" />
     <path
-       style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 248.47085,16.947459 h 20.72612"
-       id="path5003" />
+       id="path5003"
+       inkscape:label="wall083" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 289.98924,16.947459 h 22.04983"
-       id="path5038" />
+       id="path5038"
+       inkscape:label="wall084" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 289.98924,22.872059 v -5.9246 0"
-       id="path5073" />
+       d="m 289.98924,22.872059 v -5.9246"
+       id="path5073"
+       inkscape:label="wall085" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 306.08328,22.872059 H 289.98924"
-       id="path5108" />
+       id="path5108"
+       inkscape:label="wall086" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 306.08328,80.99545 V 22.872059"
-       id="path5143" />
+       id="path5143"
+       inkscape:label="wall087" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 280.85699,80.99545 h 25.22629"
-       id="path5180" />
+       id="path5180"
+       inkscape:label="wall088" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 280.85699,86.92005 v -5.9246 0"
-       id="path5215" />
+       d="m 280.85699,86.92005 v -5.9246"
+       id="path5215"
+       inkscape:label="wall089" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 306.08328,86.92005 H 280.85699"
-       id="path5250" />
+       id="path5250"
+       inkscape:label="wall090" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 306.08328,131.94697 V 86.92005"
-       id="path5285" />
+       id="path5285"
+       inkscape:label="wall091" />
     <path
        style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 312.03907,131.94697 h -5.95579"
-       id="path5320" />
+       id="path5320"
+       inkscape:label="wall092" />
     <path
-       style="fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.16458px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 312.03907,16.947459 V 131.94697"
-       id="path5355" />
+       id="path5355"
+       inkscape:label="wall093" />
   </g>
   <g
      inkscape:groupmode="layer"

@@ -1,13 +1,17 @@
 import 'package:flame/components.dart';
 import 'package:flutter/rendering.dart';
 import 'package:rpgmap/game.dart';
+import 'package:rpgmap/light_source.dart';
 
 int lastnwalls = 0;
+Vector2 lastTarget = Vector2.zero();
+
+const maxWalls = 150;
+const maxLightSources = 10;
 
 class ShaderComponent extends PositionComponent with HasGameRef<RpgMapGame> {
-  ShaderComponent() : super(position: Vector2.zero());
-
   double time = 0;
+  List<LightSource> lightSources = <LightSource>[];
 
   @override
   void update(double dt) {
@@ -17,34 +21,31 @@ class ShaderComponent extends PositionComponent with HasGameRef<RpgMapGame> {
 
   @override
   void render(Canvas canvas) {
-    var nwalls = game.map.walls.length;
+    var nwalls = gameRef.map.walls.length;
 
     if (nwalls != lastnwalls) {
-      debugPrint('nwalls: $nwalls');
+      debugPrint('nwalls0: $nwalls');
       lastnwalls = nwalls;
     }
 
-    nwalls = nwalls.clamp(0, 150);
+    nwalls = nwalls.clamp(0, maxWalls);
 
-    final xRatio = game.map.backgroundSize.x / game.map.viewBox.x;
-    final yRatio = game.map.backgroundSize.y / game.map.viewBox.y;
+    final xRatio = gameRef.map.backgroundSize.x / gameRef.map.viewBox.x;
+    final yRatio = gameRef.map.backgroundSize.y / gameRef.map.viewBox.y;
 
-    final resolution = Vector2(
-      gameRef.map.backgroundSize.x,
-      gameRef.map.backgroundSize.y,
-    );
+    final resolution = gameRef.size.clone();
 
     final uniformFloats = <double>[
       resolution.x,
       resolution.y,
       time,
-      game.activePlayer.position.x,
-      game.activePlayer.position.y,
+      gameRef.activePlayer.position.x,
+      gameRef.activePlayer.position.y,
       nwalls.toDouble(),
     ];
 
     for (var i = 0; i < nwalls; i++) {
-      final wall = game.map.walls[i];
+      final wall = gameRef.map.walls[i];
       uniformFloats.addAll([
         wall.start.x * xRatio,
         wall.start.y * yRatio,
@@ -53,7 +54,16 @@ class ShaderComponent extends PositionComponent with HasGameRef<RpgMapGame> {
       ]);
     }
 
-    final shader = gameRef.program.fragmentShader();
+    for (var i = nwalls; i < maxWalls; i++) {
+      uniformFloats.addAll([
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+      ]);
+    }
+
+    final shader = gameRef.dynamicLightingProgram.fragmentShader();
     for (var i = 0; i < uniformFloats.length; i++) {
       shader.setFloat(i, uniformFloats[i]);
     }

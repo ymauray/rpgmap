@@ -30,6 +30,7 @@ flutter:
     - assets/images/hud/
   shaders:
     - assets/shaders/dynamic_lighting.frag.glsl
+    - assets/shaders/light_source.frag.glsl
 
 flutter_icons:
   ios: true

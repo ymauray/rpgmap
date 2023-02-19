@@ -1,3 +1,4 @@
+import 'package:flutter/rendering.dart';
 import 'package:rpg_map/src/rpg_has_path.dart';
 import 'package:rpg_map/src/rpg_map_layer.dart';
 import 'package:rpg_map/src/rpg_wall.dart';
@@ -14,12 +15,14 @@ class RpgWallsLayer extends RpgMapLayer with RpgHasPath {
     for (final path in paths) {
       assert(path.getAttribute('d') != null, 'No d attribute');
       final points = parsePaths(path.getAttribute('d')!);
+      final wallLabel = path.getAttribute('inkscape:label');
 
       for (var i = 0; i < points.length - 1; i++) {
         final wall = RpgWall()
           ..start = points[i]
           ..end = points[i + 1];
         walls.add(wall);
+        debugPrint('Added $wallLabel : ${wall.start} -> ${wall.end}');
       }
     }
 

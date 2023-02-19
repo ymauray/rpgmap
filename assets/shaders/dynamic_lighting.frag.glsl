@@ -1,12 +1,18 @@
+#include <flutter/runtime_effect.glsl>
+
 precision highp float;
 
 uniform vec2 iResolution;
 uniform float iTime;
 uniform vec2 playerPos;
-uniform float nwalls;
 
-const int MAX_WALLS = 150 * 2;
-uniform vec2 walls[MAX_WALLS];
+const int MAX_WALLS = 150;
+uniform float nwalls;
+uniform vec2 walls[MAX_WALLS * 2]; // 2 points per wall
+
+const int MAX_LIGHTS = 10;
+uniform float nlights;
+uniform float lights[MAX_LIGHTS * 6]; // 6 points per light (x,y,r,g,b,w)
 
 out vec4 fragColor;
 
@@ -53,7 +59,8 @@ void main()
     float aspectRatio=iResolution.x/iResolution.y;
     
     // Normalized pixel coordinates (from 0 to 1)
-    vec2 uv=gl_FragCoord.xy/iResolution.xy;
+    vec2 uv=FlutterFragCoord().xy/iResolution.xy;
+    vec2 uvNoAR = uv;
     uv.x*=aspectRatio;
     
     // Normalized player position (from 0 to 1)
@@ -66,7 +73,7 @@ void main()
     
     if(d<maxViewDistance){
         float nohit=1.;
-        for (int i = 0; i < MAX_WALLS; i += 2) {
+        for (int i = 0; i < MAX_WALLS * 2; i += 2) {
             if (i >= int(nwalls * 2)) break;
             vec2 wallStart = walls[i];
             vec2 wallEnd = walls[i + 1];
@@ -80,5 +87,6 @@ void main()
         }
     }else{
         fragColor=vec4(0.,0.,0.,dim);
+        //fragColor=vec4(uvNoAR.x * uvNoAR.y,uvNoAR.x * uvNoAR.y,uvNoAR.x * uvNoAR.y,1.0);
     }
 }

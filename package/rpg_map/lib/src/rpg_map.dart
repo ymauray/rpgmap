@@ -49,10 +49,10 @@ class RpgMap {
     RpgDoorsLayer doorsLayer = RpgDoorsLayer(_getGroup('Doors'));
     doors = doorsLayer.doors;
 
-    RpgWallsLayer terrainWallsLayer = RpgWallsLayer(_getGroup('Terrain Walls'));
-    terrainWalls = terrainWallsLayer.walls;
-    for (var wall in terrainWalls) {
-      wall.type = RpgWallType.terrain;
-    }
+    //RpgWallsLayer terrainWallsLayer = RpgWallsLayer(_getGroup('Terrain Walls'));
+    //terrainWalls = terrainWallsLayer.walls;
+    //for (var wall in terrainWalls) {
+    //  wall.type = RpgWallType.terrain;
+    //}
   }
 }
