@@ -1,37 +1,24 @@
 name: rpgmap
 description: A new Flutter project.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.5 <3.0.0'
+  sdk: '>=2.19.2 <3.0.0'
 
 dependencies:
-  flame: ^1.5.0
-  flame_tiled: ^1.9.0
+  flame: ^1.6.0
   flutter:
     sdk: flutter
-  rpg_map:
-    path: package/rpg_map
-  xml: ^6.1.0
 
 dev_dependencies:
-  flutter_launcher_icons: ^0.11.0
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-  very_good_analysis: ^3.1.0
+  very_good_analysis: ^4.0.0+1
 
 flutter:
   uses-material-design: true
   assets:
-    - assets/tiles/
-    - assets/images/
-    - assets/images/hud/
-  shaders:
-    - assets/shaders/dynamic_lighting.frag.glsl
-    - assets/shaders/light_source.frag.glsl
-
-flutter_icons:
-  ios: true
-  image_path: "assets/launcher/launcher_icon.png"
+    - assets/maps/
