@@ -20,9 +20,11 @@ class MapRenderer extends FlameGame with HasDraggableComponents {
   final List<Wall> walls = [];
 
   Vector2? dragStart;
-  Vector2 imageOrigin = Vector2.zero();
 
   int pixelsPerGrid = 0;
+
+  double zoom = 1;
+  Vector2 imageOrigin = Vector2.zero();
 
   @override
   FutureOr<void>? onLoad() async {
@@ -32,6 +34,13 @@ class MapRenderer extends FlameGame with HasDraggableComponents {
     final map = jsonDecode(input);
     final image = map['image'] as String;
     background = await Flame.images.fromBase64('map.png', image);
+
+    final xratio = canvasSize.x / background.width;
+    final yratio = canvasSize.y / background.height;
+    zoom = xratio > yratio ? yratio : xratio;
+    imageOrigin
+      ..x = (canvasSize.x - background.size.x * zoom) / 2.0
+      ..y = (canvasSize.y - background.size.y * zoom) / 2.0;
 
     pixelsPerGrid = map['resolution']['pixels_per_grid'] as int;
 
@@ -56,32 +65,33 @@ class MapRenderer extends FlameGame with HasDraggableComponents {
 
   @override
   void render(Canvas canvas) {
-    super.render(canvas);
-    var myRect = background.size.toRect();
-    if (imageOrigin.x > 0) {
-      imageOrigin.x = 0;
-    }
-    if (imageOrigin.y > 0) {
-      imageOrigin.y = 0;
-    }
-    final csize = camera.canvasSize;
-    if (imageOrigin.x < csize.x - background.width) {
-      imageOrigin.x = csize.x - background.width;
-    }
-    if (imageOrigin.y < csize.y - background.height) {
-      imageOrigin.y = csize.y - background.height;
-    }
+    var myRect = (background.size * zoom).toRect();
+    //if (imageOrigin.x > 0) {
+    //  imageOrigin.x = 0;
+    //}
+    //if (imageOrigin.y > 0) {
+    //  imageOrigin.y = 0;
+    //}
+    //final csize = camera.canvasSize;
+    //if (imageOrigin.x < csize.x - background.width) {
+    //  imageOrigin.x = csize.x - background.width;
+    //}
+    //if (imageOrigin.y < csize.y - background.height) {
+    //  imageOrigin.y = csize.y - background.height;
+    //}
     myRect = myRect.translate(imageOrigin.x, imageOrigin.y);
     paintImage(canvas: canvas, rect: myRect, image: background);
+
     for (final wall in walls) {
       canvas.drawLine(
-        (wall.start + imageOrigin).toOffset(),
-        (wall.end + imageOrigin).toOffset(),
+        (wall.start * zoom + imageOrigin).toOffset(),
+        (wall.end * zoom + imageOrigin).toOffset(),
         Paint()
           ..strokeWidth = 8.0
           ..color = const Color(0xFFFF0000),
       );
     }
+    super.render(canvas);
   }
 
   @override
@@ -97,5 +107,32 @@ class MapRenderer extends FlameGame with HasDraggableComponents {
     imageOrigin += offset;
     dragStart = dragUpdate;
     super.onDragUpdate(event);
+  }
+
+  void zoomIn() {
+    var delta = 1.1;
+    if ((zoom * delta) > 1) {
+      delta = 1 / zoom;
+    }
+
+    final xdiff = ((canvasSize.x / 2) - imageOrigin.x) * delta;
+    final ydiff = ((canvasSize.y / 2) - imageOrigin.y) * delta;
+
+    imageOrigin
+      ..x = (canvasSize.x / 2) - xdiff
+      ..y = (canvasSize.y / 2) - ydiff;
+
+    zoom *= delta;
+  }
+
+  void zoomOut() {
+    final xdiff = ((canvasSize.x / 2) - imageOrigin.x) / 1.1;
+    final ydiff = ((canvasSize.y / 2) - imageOrigin.y) / 1.1;
+
+    imageOrigin
+      ..x = (canvasSize.x / 2) - xdiff
+      ..y = (canvasSize.y / 2) - ydiff;
+
+    zoom /= 1.1;
   }
 }
